@@ -46,11 +46,9 @@ class Solution:
         while cellQueue:
             currentRow, currentCol, currentDistance = cellQueue.popleft()
             mat[currentRow][currentCol] = currentDistance
-            
             # Explore all 4 adjacent cells
             for rowOffset, colOffset in directionOffsets:
                 neighborRow, neighborCol = currentRow + rowOffset, currentCol + colOffset
-                
                 # Check boundaries and if not visited
                 if 0 <= neighborRow < totalRows and 0 <= neighborCol < totalCols and not visitedCells[neighborRow][neighborCol]:
                     visitedCells[neighborRow][neighborCol] = True

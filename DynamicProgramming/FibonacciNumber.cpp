@@ -11,8 +11,6 @@
 class Solution {
 public:
     /**
-     * Calculate the nth Fibonacci number using recursion.
-     *
      * Args:
      *     position: The position in sequence
      *
